@@ -1,0 +1,332 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+/* .App{
+  margin-top: 115px;
+}
+
+@media screen and (max-width: 769px) {
+  .App{
+    margin-top: 90px;
+  }
+  
+}
+
+@media screen and (max-width: 426px) {
+  .App{
+    margin-top: 80px;
+  }
+  
+} */
+
+
+/* login/signup button start */
+
+.custom-btn {
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+
+.btn-7 {
+  background: linear-gradient(0deg, rgb(255, 123, 0) 0%, rgba(251,75,2,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-7:before,
+  .btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn-7:before{
+     height: 0%;
+     width: 2px;
+  }
+  .btn-7:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-7:hover{
+    color: rgba(251,75,2,1);
+    background: transparent;
+  }
+  .btn-7:hover:before {
+    height: 100%;
+  }
+  .btn-7:hover:after {
+    width: 100%;
+  }
+  .btn-7 span:before,
+  .btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn-7 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-7 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .btn-7 span:hover:before {
+    height: 100%;
+  }
+  .btn-7 span:hover:after {
+    width: 100%;
+  }
+
+/* login/signup button end */
+
+
+/* not found page button css start */
+
+.not_found_page{
+  padding: 7px 20px;
+  border: unset;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  color: #fff;
+  z-index: 1;
+  background: #E45700;
+  position: relative;
+  font-weight: 1000;
+  font-size: 15px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ .not_found_page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ .not_found_page:hover {
+  color: #e8e8e8;
+ }
+ 
+ .not_found_page:hover::before {
+  width: 100%;
+ }
+
+
+ /* not found page button css end */
+
+/* userprofile button css start */
+.change_password {
+  cursor: pointer;
+  position: relative;
+  padding: 3px 8px;
+  font-size: 14px;
+  color: #E45700;
+  border: 2px solid #E45700;
+  border-radius: 10px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.change_password::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #E45700;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.change_password:hover::before {
+  scale: 7;
+}
+
+.change_password:hover {
+  color: #fff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(41, 41, 41, 0.4);
+}
+
+.change_password:active {
+  scale: 1;
+}
+
+
+.logout {
+  padding: 8px 20px;
+  border-radius: 10px;
+  width: 100%;
+  border: 0;
+  background-color: #E45700;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: all .3s ease;
+  box-shadow: #923801 0px 5px 0px 0px;
+  color: hsl(0, 0%, 100%);
+ }
+ 
+ .logout:hover {
+  box-shadow: #923801 0px 7px 0px 0px;
+ }
+ 
+ .logout:active {
+  background-color: #E45700;
+  /*50, 168, 80*/
+  box-shadow: #923801 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+ }
+
+
+.bookmarkBtn {
+  width: 80px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #E45700;
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  color: white;
+  background: #E45700;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .3s;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+  transition-duration: .3s;
+  font-size: 13px;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  border-radius: 10px;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}
+
+
+
+
+/* userprofile button css end */
+
+
+/* Footer css start */
+
+.path-0{
+  animation:pathAnim-0 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pathAnim-0{
+  0%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 64.80133185349611,200.4821309655938 129.60266370699222,200.96426193118756 176,218 C 222.39733629300778,235.03573806881244 250.39067702552722,268.62508324084354 306,272 C 361.6093229744728,275.37491675915646 444.8346281908989,248.53540510543843 505,243 C 565.1653718091011,237.46459489456157 602.2708102108768,253.2332963374029 643,253 C 683.7291897891232,252.7667036625971 728.0821309655939,236.53140954495007 785,209 C 841.9178690344061,181.46859045504993 911.4006659267479,142.6410654827969 967,157 C 1022.5993340732521,171.3589345172031 1064.315205327414,238.90432852386238 1111,235 C 1157.684794672586,231.09567147613762 1209.3385127635959,155.74162042175362 1265,138 C 1320.6614872364041,120.25837957824639 1380.3307436182022,160.1291897891232 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  25%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 51.661955851523004,222.21950918732273 103.32391170304601,244.43901837464546 158,247 C 212.676088296954,249.56098162535454 270.36630903933894,232.46343568874087 331,230 C 391.63369096066106,227.53656431125913 455.21085213959805,239.70723887039094 501,240 C 546.789147860402,240.29276112960906 574.7902824022691,228.70760882969543 622,236 C 669.2097175977309,243.29239117030457 735.6280182513256,269.4623258108275 785,273 C 834.3719817486744,276.5376741891725 866.6976445924281,257.44308792699474 930,236 C 993.3023554075719,214.5569120730053 1087.5814033789618,190.76532248119375 1148,170 C 1208.4185966210382,149.23467751880625 1234.9767418917252,131.49562214823038 1278,137 C 1321.0232581082748,142.50437785176962 1380.5116290541373,171.2521889258848 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  50%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 66.40878036749291,231.72075471698113 132.81756073498582,263.44150943396227 182,237 C 231.18243926501418,210.55849056603773 263.13853742754964,125.95471698113207 305,128 C 346.86146257245036,130.04528301886793 398.62828955481564,218.73962264150944 462,221 C 525.3717104451844,223.26037735849056 600.3483043531878,139.0867924528302 665,126 C 729.6516956468122,112.91320754716982 783.9784930324332,170.91320754716983 825,187 C 866.0215069675668,203.08679245283017 893.7377235170799,177.2603773584906 945,165 C 996.2622764829201,152.7396226415094 1071.0706128992474,154.0452830188679 1135,168 C 1198.9293871007526,181.9547169811321 1251.9798248859295,208.55849056603773 1301,216 C 1350.0201751140705,223.44150943396227 1395.0100875570351,211.72075471698113 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  75%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 55.90711555062276,180.88972746331237 111.81423110124553,161.77945492662474 173,150 C 234.18576889875447,138.22054507337526 300.65019114564063,133.77190775681342 344,154 C 387.34980885435937,174.22809224318658 407.5850043161919,219.13291404612158 460,239 C 512.4149956838081,258.8670859538784 597.0097915895918,253.69643605870021 665,230 C 732.9902084104082,206.30356394129979 784.3758293254408,164.08134171907759 825,167 C 865.6241706745592,169.91865828092241 895.4868911086447,217.9781970649895 952,233 C 1008.5131088913553,248.0218029350105 1091.6766062399802,230.00587002096435 1141,205 C 1190.3233937600198,179.99412997903565 1205.806683931434,147.99832285115306 1250,146 C 1294.193316068566,144.00167714884694 1367.0966580342829,172.00083857442348 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+  100%{
+    d: path("M 0,400 C 0,400 0,200 0,200 C 64.80133185349611,200.4821309655938 129.60266370699222,200.96426193118756 176,218 C 222.39733629300778,235.03573806881244 250.39067702552722,268.62508324084354 306,272 C 361.6093229744728,275.37491675915646 444.8346281908989,248.53540510543843 505,243 C 565.1653718091011,237.46459489456157 602.2708102108768,253.2332963374029 643,253 C 683.7291897891232,252.7667036625971 728.0821309655939,236.53140954495007 785,209 C 841.9178690344061,181.46859045504993 911.4006659267479,142.6410654827969 967,157 C 1022.5993340732521,171.3589345172031 1064.315205327414,238.90432852386238 1111,235 C 1157.684794672586,231.09567147613762 1209.3385127635959,155.74162042175362 1265,138 C 1320.6614872364041,120.25837957824639 1380.3307436182022,160.1291897891232 1440,200 C 1440,200 1440,400 1440,400 Z");
+  }
+}
+
+/* Footer css end */
